@@ -36,7 +36,6 @@
   "types": "./typings/index.d.ts",
   "dependencies": {
     "debug": "^4.0.1",
-    "graphemer": "^1.2.0",
     "minimist": "^1.2.0",
     "module-alias": "^2.2.2",
     "node-fetch": "^2.2.0",

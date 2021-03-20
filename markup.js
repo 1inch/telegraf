@@ -1,6 +1,3 @@
-const Graphemer = require('graphemer').default
-const splitter = new Graphemer();
-
 class Markup {
   forceReply (value = true) {
     this.force_reply = value
@@ -171,7 +168,7 @@ class Markup {
   }
 
   static formatHTML (text = '', entities = []) {
-    const chars = splitter.splitGraphemes(text)
+    const chars = text.split('')
     const available = [...entities]
     const opened = []
     const result = []
