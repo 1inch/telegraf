@@ -125,7 +125,8 @@ class TelegrafContext {
       (this.editedMessage && this.editedMessage.chat) ||
       (this.callbackQuery && this.callbackQuery.message && this.callbackQuery.message.chat) ||
       (this.channelPost && this.channelPost.chat) ||
-      (this.editedChannelPost && this.editedChannelPost.chat)
+      (this.editedChannelPost && this.editedChannelPost.chat) ||
+      (this.chat_member && this.chat_member.chat) ||
   }
 
   get from () {
@@ -137,7 +138,8 @@ class TelegrafContext {
       (this.editedChannelPost && this.editedChannelPost.from) ||
       (this.shippingQuery && this.shippingQuery.from) ||
       (this.preCheckoutQuery && this.preCheckoutQuery.from) ||
-      (this.chosenInlineResult && this.chosenInlineResult.from)
+      (this.chosenInlineResult && this.chosenInlineResult.from) ||
+      (this.chat_member && this.chat_member.from)
   }
 
   get inlineMessageId () {
