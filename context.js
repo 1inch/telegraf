@@ -126,7 +126,7 @@ class TelegrafContext {
       (this.callbackQuery && this.callbackQuery.message && this.callbackQuery.message.chat) ||
       (this.channelPost && this.channelPost.chat) ||
       (this.editedChannelPost && this.editedChannelPost.chat) ||
-      (this.chat_member && this.chat_member.chat) ||
+      (this.chat_member && this.chat_member.chat)
   }
 
   get from () {
